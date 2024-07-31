@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techlegion</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header, .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1a1a1a;
+        }
+        .header h1 {
+            color: #00ff00; /* Green highlight */
+        }
+        .navigation a {
+            color: #00bfff; /* Blue highlight */
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .section {
+            padding: 50px 20px;
+        }
+        .about, .portfolio, .contact {
+            margin: 20px 0;
+        }
+        .portfolio .item {
+            margin-bottom: 20px;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .contact form input, .contact form textarea {
+            margin: 10px 0;
+            padding: 10px;
+            border: none;
+        }
+        .contact form input[type="submit"] {
+            background-color: #ff4500; /* Red highlight */
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Techlegion</h1>
+        <div class="navigation">
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <div class="section about" id="about">
+        <h2>About Me</h2>
+        <p>Welcome to Techlegion! This is a tech-focused website where I share my projects, insights, and updates. Stay tuned for exciting content and innovative ideas.</p>
+    </div>
+
+    <div class="section portfolio" id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="item">
+            <h3>Project Title 1</h3>
+            <p>Short description of the project. <a href="#">Link to project</a></p>
+            <video width="320" height="240" controls>
+                <source src="path-to-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="item">
+            <h3>Project Title 2</h3>
+            <p>Short description of the project. <a href="#">Link to project</a></p>
+            <video width="320" height="240" controls>
+                <source src="path-to-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <!-- Add more projects as needed -->
+    </div>
+
+    <div class="section contact" id="contact">
+        <h2>Contact</h2>
+        <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+            <input type="submit" value="Send Message">
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Techlegion. All rights reserved.</p>
+        <div class="social-media">
+            <a href="https://twitter.com/your-profile" target="_blank">Twitter</a> | 
+            <a href="https://github.com/your-profile" target="_blank">GitHub</a>
+            <!-- Add more social media links as needed -->
+        </div>
+    </div>
+
+</body>
+</html>
